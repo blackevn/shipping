@@ -17,7 +17,7 @@ const CardDetails = [
     {
     logo: SiFsecure,
     title: 'Secure, transparent and reliable shipping solutions',
-    description: 'We provide'
+    description: 'Check and track your packages with our secure, transparent and reliable shipping solutions. We provide a simple and easy to use platform to track your packages.'
     },
  
 ]
@@ -25,7 +25,7 @@ const CardDetails = [
 const SecondSection = () => {
   return (
     <>
-    <div className='lg:flex space-y-4 p-8 items-center gap-4 w-full justify-between'>
+    <div className='lg:flex space-y-4 items-center gap-4 w-full justify-between'>
         <div  className=''>
             <h1>About</h1>
             <h1 className='text-5xl max-w-[600px]'>Solutions for your business needs</h1>
@@ -35,7 +35,7 @@ const SecondSection = () => {
             We provide a simple and easy to use platform to track your packages.
         </div>
     </div>
-    <div className="flex gap-4 p-8">
+    <div className="lg:flex gap-4 p-8 space-y-4 lg:space-y-0">
         {CardDetails.map((card, index) => <Card logo={card.logo} title={card.title} description={card.description}/>)}
     </div>
     </>

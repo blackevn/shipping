@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Landing = () => {
   return (
-    <div className="p-8 grid place-items-center lg:gap-8 min-h-screen">
+    <div className=" grid place-items-center lg:gap-8 min-h-screen">
         <div className="text-center space-y-4">
         <h1 className="text-2xl lg:text-7xl font-bold capitalize"><span className="text-blue-600">grow your business</span> and we will take care of your logistics</h1>
         <p className="text-md text-xl font-bold">This is a simple app to track packages</p>
