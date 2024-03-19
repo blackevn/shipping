@@ -2,22 +2,26 @@ import React from 'react'
 import { LiaExchangeAltSolid } from "react-icons/lia";
 import { FaCopy } from "react-icons/fa";
 import { SectionDetails } from '@/components';
+import { Bs1CircleFill, Bs2CircleFill, Bs3CircleFill   } from "react-icons/bs";
 
 const status = [
   {
-    icon: LiaExchangeAltSolid,
+    icon: Bs1CircleFill,
+    iconColor: 'text-red-600',
     label: 'Departs from San Jose',
     description: 'Your package is on its way to its destination'
   },
   {
-    icon: LiaExchangeAltSolid,
+    icon: Bs2CircleFill,
+    iconColor: 'text-yellow-600',
     label: 'Transit in New York', 
     description: 'Your package is on its way to its destination'
   },
   {
-    icon: LiaExchangeAltSolid,
+    icon: Bs3CircleFill,
+    iconColor: 'text-green-600',
     label: 'Arrived in Accra',
-    description: 'Your package is on its way to its destination'
+    description: 'Your package has arrived in Accra and is ready for delivery'
   },
 ]
 
@@ -71,12 +75,12 @@ const ThirdSection = () => {
       </div>
       </div>
       <div>
-        {status.map((item, index) => (<div key={index} className='lg:flex gap-4 justify-between'>
-          <div className=' lg:flex items-center gap-4 justify-center lg:space-y-0'>
-            <item.icon className='text-lg'/>
+        {status.map((item, index) => (<div key={index} className='lg:grid grid-cols-2 gap-4 justify-between'>
+          <div className=' lg:flex items-center gap-4 justify-start lg:space-y-0'>
+            <item.icon className={`${item.iconColor} text-lg`}/>
             <h1 className='text-sm font-medium'>{item.label}</h1>
           </div>
-          <div className='py-4'>
+          <div className='py-4 max-w-[300px]'>
             <h1>{item.description}</h1>
           </div>
         </div>))}     

@@ -6,7 +6,7 @@ import { FaPhoneVolume } from "react-icons/fa6";
 
 const ContactSection: React.FC = () => {
     return (
-        <div className="flex flex-col items-center justify-center space-y-3 pt-20">
+        <div className="flex flex-col items-center justify-center space-y-3 bg-red-400">
             <h2 className="text-2xl text-center font-bold">
                 Looking for leading shipping company for your business?
             </h2>
