@@ -1,8 +1,6 @@
 'use client'
 
 import { Button, SectionDetails } from '@/components'
-import React from 'react'
-import { IconBaseProps } from 'react-icons'
 import { FaArrowAltCircleRight } from 'react-icons/fa'
 
 const details = 
@@ -18,7 +16,7 @@ const details =
 
 const FifthSection = () => {
   return (
-    <div className='py-4 lg:grid grid-cols-2 gap-4 space-y-4 lg:space-y-0'>
+    <div className='py-4 lg:grid grid-cols-2 gap-4 space-y-4 lg:space-y-0 p-8'>
         <div className='shadow-lg rounded-lg space-y-4 p-4'>
             <div>
                 <h1 className='text-sm font-bold'>Input track code</h1>

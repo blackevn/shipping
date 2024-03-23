@@ -40,7 +40,7 @@ const details1 =
 const ThirdSection = () => {
   return (
     <>
-    <div className='grid place-items-center gap-4 mb-4 '>
+    <div className='grid place-items-center gap-4 mb-4 p-8'>
       <h1 className='capitalize'>Our services</h1>
       <div className='space-y-4 grid place-items-center'>
       <h1 className='text-5xl'>Everything is ready to transport</h1>

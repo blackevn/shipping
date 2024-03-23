@@ -42,7 +42,7 @@ const details =
 
 const FourthSection = () => {
   return (
-    <div className="lg:grid gap-4 grid-cols-2 space-y-4 lg:space-y-0">
+    <div className="lg:grid gap-4 grid-cols-2 space-y-4 lg:space-y-0 p-8">
         <SectionDetails 
         title={details.title} 
         description={details.description} 
@@ -51,8 +51,8 @@ const FourthSection = () => {
         <div>
           {
             shippingCard.map((card, index) => (
-              <div className={`flex items-center ${card?.flex}`}>
-              <div key={index} className={`flex items-center gap-4 p-4 shadow-lg rounded-xl ${card?.flex}`}>
+              <div key={index} className={`flex items-center ${card?.flex}`}>
+              <div className={`flex items-center gap-4 p-4 shadow-lg rounded-xl ${card?.flex}`}>
                 <div className={`text-2xl p-4 rounded-md ${card?.bgColor} ${card?.textColor}`}>
                 <card.icon/>
                 </div>
